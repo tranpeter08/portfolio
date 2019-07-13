@@ -7,21 +7,28 @@
   <meta name='Description' content='My name is Peter, and I am full stack MERN developer based in 
   Los Angeles, CA.' />
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://kit.fontawesome.com/f810e98638.js"></script>
   <title>Peter Tran - Full Stack Web Developer</title>
 </head>
-<header>Header
-    
-    <nav>
-        navigation
-      </nav>
+<header>
+  <nav class="nav-main">
+    <span>Peter Tran</span>
+    <div class='nav-links-container'>
+      <button id='hamburger' class='test test2'><i class="fas fa-bars"></i></button>
+      <ul class="hidde">
+        <li goTo='#about'><a goTo='#about' href="#About">About</a></li>
+        <li goTo='#projects'><a goTo='#projects' href="#Projects">Projects</a></li>
+        <li goTo='#contact'><a goTo='#contact' href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <body>
-
   <section class="landing">
+    <img src="" alt="Image of Peter" class='me-icon'>
     <h1>Hello!</h1>
     <p>
-      My name is Peter, and I am full stack MERN developer based in 
+      My name is Peter, and I am a full stack MERN developer based in 
       Los Angeles, CA.
     </p>
   </section>
@@ -37,72 +44,19 @@
     </p> 
   </section>
 
-  <section id='projects' class="projects">
-
-    <h1> Projects</h1>
+  <section id='projects'>
+    <h1>Projects</h1>
     <div class="projects" ></div>
-
-    <div>
-      <img src="" alt="Preview of Get Swole">>
-      <h2>Get Swole</h2>
-      <h3>Description</h3>
-      <p>
-        I wanted to get back into weight lifting and found that it was tricky 
-        to remember the stats I had for each exercise, so I created Get Swole.
-        Get Swole keeps track of workouts, search for nutrition values, 
-        and recipes.
-      </p>
-      <h3>Tech Stack</h3>
-
-      <h4>Front-End</h4>
-
-      <ul>   
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React JS</li>
-        <li>Redux</li>
-      </ul>
-
-      <h4>Back-End</h4>
-      <ul>
-        
-        <li>Node JS</li>
-        <li>Express</li>
-        <li>Mongoose</li>
-        <li>MongoDB</li>
-      </ul>
-
-      <h4>Authentication</h4>
-      <ul>
-        <li>JWT</li>
-        <li>Passport</li>
-      </ul>
-
-      <h4>Testing</h4>
-      <ul>
-        <li>Jest</li>
-        <li>Enzyme</li>
-        <li>Mocha</li>
-        <li>Chai</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Argus</h2>
-    </div>
-
-    <div>
-      <h2>NiteOut</h2>
-    </div>
-
   </section>
    
-  <section id='about' class="about">
+  <section id='contact' class="contact">
     <h1>Contact</h1>
+    <a href="mailto:tran.peter08@gmail.com" target="_top" >Email icon</a>
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src='./projects.js'></script>
+  <script src='./store.js'></script>
   <script src='./index.js'></script>
 </body>
 </html>
