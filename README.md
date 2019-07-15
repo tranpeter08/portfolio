@@ -1,1 +1,1 @@
-Repot for my portfolio site.
+Repo for my portfolio site.
