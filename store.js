@@ -1,3 +1,3 @@
 const store = {
-  about: 'test'
+  responsive: false
 }

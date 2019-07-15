@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name='Description' content='My name is Peter, and I am full stack MERN developer based in 
   Los Angeles, CA.' />
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f810e98638.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Peter Tran - Full Stack Web Developer</title>
 </head>
 <header>
@@ -15,7 +16,7 @@
     <span>Peter Tran</span>
     <div class='nav-links-container'>
       <button id='hamburger' class='test test2'><i class="fas fa-bars"></i></button>
-      <ul class="hidde">
+      <ul class="hidden">
         <li goTo='#about'><a goTo='#about' href="#About">About</a></li>
         <li goTo='#projects'><a goTo='#projects' href="#Projects">Projects</a></li>
         <li goTo='#contact'><a goTo='#contact' href="#Contact">Contact</a></li>
@@ -24,8 +25,10 @@
   </nav>
 </header>
 <body>
-  <section class="landing">
-    <img src="" alt="Image of Peter" class='me-icon'>
+  <section id='landing'>
+    <div class="profile-icon-container">
+      <img src="./images/profile-icon.jpg" alt="Image of Peter" class='profile-icon'>
+    </div>
     <h1>Hello!</h1>
     <p>
       My name is Peter, and I am a full stack MERN developer based in 
@@ -36,12 +39,20 @@
   <section id='about' class="about">
     <h1>About Me</h1>
     <p>
-      I enjoy coding and creating web apps. To see something that was just an 
-      idea come to life on screen is very rewarding. Staring at the terminal, 
+      <span class="tab"></span>
+      I enjoy coding and creating web apps.  To see something that was just an 
+      idea come to life on screen is very rewarding.  Staring at the terminal, 
       and successfully debugging code has become one of my favorite hobbies!  
       I am motivated to learn all I can, take on challenges, share my knowledge, 
       and continue to grow.
-    </p> 
+    </p>
+    <p>
+      <span class="tab"></span>
+      Outside of coding for fun, I am a car and motorcycle enthusiast, as 
+      well as an avid weekend BBQ’er.  During my free time, I could be 
+      found wrenching in the garage or in the backyard tending to my grill, 
+      and trying a new rub recipe.
+    </p>
   </section>
 
   <section id='projects'>

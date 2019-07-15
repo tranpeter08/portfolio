@@ -7,22 +7,34 @@ html{
 }
 
 body{
+  font-family: 'Karla', sans-serif;
   margin: 0;
+  background-color: rgb(245, 245, 245);
 }
 
 button:hover{
   cursor: pointer;
 }
 
+h1, h2, h3, h4, h5{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
 .hidden{
   display: none;
+}
+
+.tab{
+  margin-left: 2rem;
 }
 
 nav{
   display: flex;
   position: fixed;
-  padding: 1rem;
-  background-color: gray;
+  padding: 1rem 2rem;
+  background-color: rgb(10, 80, 100);
   width: 100%;
 }
 
@@ -33,6 +45,13 @@ nav span{
 .nav-links-container{
   margin-left: auto;
   display: flex;
+  background-color: inherit;
+}
+
+.nav-links-container button{
+  background: none;
+  border: none;
+  font-size: 2rem;
 }
 
 .nav-links-container ul{
@@ -43,25 +62,170 @@ nav span{
   top: 5.2rem;
   left: 0;
   width: 100%;
-  background-color: grey;
+  background-color: inherit;
   text-align: center;
 }
 
 nav a{
   display: inline-block;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: .8rem;
+  text-decoration: none;
 }
 
 nav a:hover{
-  background-color: bisque;
+  background-color:rgb(230, 230, 230);
 }
 
-.landing{
+nav a:visited{
+  color: black;
+}
+
+section{
+  padding: 2rem 2rem;
+}
+
+section h1{
+  font-size: 2.4rem;
+}
+
+section h2{
+  font-size: 2.2rem;
+}
+
+section h3{
+  font-size: 1.8rem;
+}
+
+section h3,
+section h4{
+  color: rgb(80, 80, 80);
+}
+
+section h4,
+section p{
+  font-size: 1.6rem;
+}
+
+section p{
+  margin: 1rem 1rem 0;
+}
+
+#landing{
   padding-top: 5.2rem;
+  text-align: center;
+}
+
+#landing h1{
+  font-size: 3rem;
+}
+
+#landing p{
+  font-size: 2rem;
+}
+
+.profile-icon-container{
+  padding: 2rem 0;
+}
+
+.profile-icon{
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  width: 10rem;
+}
+
+.stack-container,
+.project-container > div,
+.project-container{
+  padding: 1rem;
+}
+
+.project-container{
+  margin-top: 2rem;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img-container{
+  flex: 1 1 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshot{
+  width: 100%;
+}
+
+.descr-container{
+  flex: 1.5 1.5 60%;
+}
+
+.tech-container{
+  flex: 1 1 100%;
+}
+
+.stacks-container{
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.stack-container{
+}
+
+.tech-list{
+  list-style-type: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.tech-icon{
+  height: 40px;
+  padding: .4rem;
+}
+
+#contact{
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 400px) {
+  #hamburger{
+    display: none;
+  }
 
+  .nav-links-container ul{
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  /* .nav-links-container li{
+    display: inline-block;
+  } */
+
+  .nav-links-container a{
+    padding: 0 .8rem;
+    font-size: 1.8rem;
+  }
+
+  .nav-links-container li:not(:first-child){
+    border-left: 1px solid black;
+  }
+
+  .nav-links-container a:hover{
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+
+  .profile-icon{
+    width: 140px;
+  }
 }

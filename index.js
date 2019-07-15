@@ -1,7 +1,7 @@
 'use strict';
 
 function clickOut() {
-  $(docmuent).on('click', e => {
+  $(document).on('click', e => {
     const node = $(e.target);
 
     const menuQuery = node.closest('ul')[0];
@@ -37,8 +37,7 @@ function navButton() {
 function mapItem({name, icon}) {
   return `
     <li>
-      ${name}
-      <img class='tech-icon' src='${icon}' alt='Icon for ${name}'/>
+      <img class='tech-icon' title='${name}' aria-label=${name} src='${icon}' alt='Icon for ${name}'/>
     </li>
   `;
 }
@@ -49,8 +48,10 @@ function genItems(items) {
 
 function mapTech({tech, items}) {
   return `
-    <h4 class='tech-h4'>${tech}</h4>
-    <ul class='tech-list'>${genItems(items)}</ul>
+    <div class='stack-container'>
+      <h4 class='tech-h4'>${tech}</h4>
+      <ul class='tech-list'>${genItems(items)}</ul>
+    </div>
   `;
 }
 
@@ -61,16 +62,24 @@ function genTech(techStack) {
 function mapProjects({project, screenshot, desc, demo, code, techStack}) {
   return `
     <div class='project-container'>
-      <img 
-        class='screenshot 
-        src='${screenshot}' 
-        alt='Screenshot of "${project}"' />
-      <h2>${project}</h2>
-      <h3>Description</h3>
-      <p>${desc}</p>
+      <div class='img-container'>
+        <img 
+          class='screenshot' 
+          src='${screenshot}' 
+          alt='Screenshot of "${project}"' />
+      </div>  
+      <div class='descr-container'>
+          <h2>${project}</h2>
+          <p><span class="tab"></span>${desc}</p>
+      </div>
+      
+      <div class='tech-container'>
       <h3>Tech Stack</h3>
-      ${genTech(techStack)}
-      <div>
+        <div class='stacks-container'>
+          ${genTech(techStack)}
+        </div>
+      </div>
+      <div class='link-container'>
         <a href="${demo}" target="_blank" rel="noopener noreferrer">Demo</a>
         <a href="${code}">Code</a>
       </div>
