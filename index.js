@@ -8,12 +8,12 @@ function clickOut() {
     const menu = $('.nav-links-container ul');
 
     const buttonQuery = node.closest('button')[0];
-
     const btn = $('#hamburger').closest('button');
+    
     const hideBtn = btn.hasClass('hidden');
 
     if (menuQuery !== menu[0] && buttonQuery !== btn[0] && !hideBtn ) {
-      menu.attr('class', 'hidden');
+      menu.addClass('hidden');
     }
   });
 }
