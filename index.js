@@ -23,7 +23,7 @@ function navLink() {
     const section = $(e.target).attr('goTo');
     const height = $(section).offset().top;
 
-    $('.nav-links-container ul').toggleClass('hidden');
+    $('.nav-links-container ul').addClass('hidden');
     window.scrollTo(0, height - 52);
   });
 }
@@ -32,6 +32,12 @@ function navButton() {
   $('#hamburger').on('click', () => {
     $('.nav-links-container ul').toggleClass('hidden');
   });
+}
+
+function genLink(href, name) {
+  return `
+      <a href="${href}" target="_blank" rel="noopener noreferrer">${name}</a>
+  `
 }
 
 function mapItem({name, icon}) {
@@ -49,7 +55,7 @@ function genItems(items) {
 function mapTech({tech, items}) {
   return `
     <div class='stack-container'>
-      <h4 class='tech-h4'>${tech}</h4>
+      <h3>${tech}</h3>
       <ul class='tech-list'>${genItems(items)}</ul>
     </div>
   `;
@@ -71,17 +77,15 @@ function mapProjects({project, screenshot, desc, demo, code, techStack}) {
       <div class='descr-container'>
           <h2>${project}</h2>
           <p><span class="tab"></span>${desc}</p>
-      </div>
-      
+      </div>      
       <div class='tech-container'>
-      <h3>Tech Stack</h3>
         <div class='stacks-container'>
           ${genTech(techStack)}
         </div>
       </div>
-      <div class='link-container'>
-        <a href="${demo}" target="_blank" rel="noopener noreferrer">Demo</a>
-        <a href="${code}">Code</a>
+      <div class='links-container'>
+        ${genLink(demo, 'Demo')}
+        ${genLink(code, 'Code')}
       </div>
     </div>
   `;

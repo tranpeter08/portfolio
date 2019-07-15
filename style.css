@@ -16,6 +16,10 @@ button:hover{
   cursor: pointer;
 }
 
+a{
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5{
   font-family: 'Rubik', sans-serif;
   margin: 0;
@@ -34,12 +38,19 @@ nav{
   display: flex;
   position: fixed;
   padding: 1rem 2rem;
-  background-color: rgb(10, 80, 100);
+  background-color: rgb(10, 80, 130);
   width: 100%;
 }
 
 nav span{
   font-size: 2.8rem;
+}
+
+nav button,
+nav span,
+nav a,
+nav a:visited{
+  color: rgb(245, 245, 245);
 }
 
 .nav-links-container{
@@ -78,16 +89,13 @@ nav a:hover{
   background-color:rgb(230, 230, 230);
 }
 
-nav a:visited{
-  color: black;
-}
-
 section{
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 14rem;
+  /* margin-top: 10rem; */
 }
 
 section h1{
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 section h2{
@@ -105,14 +113,22 @@ section h4{
 
 section h4,
 section p{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 section p{
-  margin: 1rem 1rem 0;
+  margin: 1rem 0 0;
+  line-height: 1.4;
+  letter-spacing: .05rem;
+  word-spacing: .05rem;
+}
+
+section:nth-child(odd){
+  background-color: rgb(240, 240, 240);
 }
 
 #landing{
+  margin-top: 0;
   padding-top: 5.2rem;
   text-align: center;
 }
@@ -123,16 +139,53 @@ section p{
 
 #landing p{
   font-size: 2rem;
+  margin: 1rem 1rem 0;
+}
+
+.contact-ctnr{
+  margin-top: 4rem;
+}
+
+.contact-link{
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 3.4rem;
+}
+
+footer h3,
+.contact-link,
+.contact-link:visited{
+  color:rgb(25, 110, 170);
+}
+
+.contact-link:hover{
+  color: grey;
 }
 
 .profile-icon-container{
-  padding: 2rem 0;
+  padding: 8rem 0;
 }
 
 .profile-icon{
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
   width: 10rem;
+}
+
+#about{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about-text-container{
+  max-width: 80rem;
+}
+
+.projects{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .stack-container,
@@ -142,10 +195,12 @@ section p{
 }
 
 .project-container{
-  margin-top: 2rem;
+  margin-top: 4rem;
   background-color: white;
   display: flex;
   flex-flow: row wrap;
+  border-radius: 1rem;
+  max-width: 80rem;
 }
 
 .img-container{
@@ -174,12 +229,9 @@ section p{
   justify-content: space-evenly;
 }
 
-.stack-container{
-}
-
 .tech-list{
   list-style-type: none;
-  margin: 1rem 0 0;
+  margin: .5rem 0 0;
   padding: 0;
   display: flex;
   flex-flow: row;
@@ -191,8 +243,42 @@ section p{
   padding: .4rem;
 }
 
-#contact{
-  padding-bottom: 2rem;
+.links-container{
+  flex: 1;
+  text-align: center;
+}
+
+.links-container a{
+  display: inline-block;
+  padding: 1rem 1rem;
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  background: black;
+  
+}
+
+.links-container a,
+.links-container a:visited{
+  color: rgb(245, 245, 245);
+}
+
+.links-container a:first-child:hover{
+  background: rgb(8, 97, 138);
+}
+
+.links-container a:last-child:hover{
+  background: rgb(120, 135, 139);
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+footer h3{
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -206,17 +292,13 @@ section p{
     align-items: center;
   }
 
-  /* .nav-links-container li{
-    display: inline-block;
-  } */
-
   .nav-links-container a{
     padding: 0 .8rem;
     font-size: 1.8rem;
   }
 
   .nav-links-container li:not(:first-child){
-    border-left: 1px solid black;
+    border-left: 2px solid rgb(245, 245, 245);
   }
 
   .nav-links-container a:hover{
