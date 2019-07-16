@@ -20,7 +20,7 @@ function clickOut() {
 
 function navLink() {
   $('.nav-links-container a').on('click', e => {
-    const section = $(e.target).attr('goTo');
+    const section = $(e.target).attr('section');
     const height = $(section).offset().top;
 
     $('.nav-links-container ul').addClass('hidden');
