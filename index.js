@@ -7,12 +7,12 @@ function clickOut() {
 
     if (!isCollapse) {
       const node = $(e.target)
-      const nodeList = node.closest('#nav-menu')[0];
+      const nodeMenu = node.closest('#nav-menu')[0];
       const nodeBtn = node.closest('#hamburger')[0];
 
       const hamburger = $('#hamburger')[0];
 
-      if (nodeList !== menu[0] && nodeBtn !== hamburger) {
+      if (nodeMenu !== menu[0] && nodeBtn !== hamburger) {
         menu.addClass('collapse');
       }
     }
