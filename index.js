@@ -20,11 +20,8 @@ function clickOut() {
 
 function navLink() {
   $('.nav-links-container a').on('click', e => {
-    const section = $(e.target).attr('section');
-    const height = $(section).offset().top;
 
     $('.nav-links-container ul').addClass('hidden');
-    window.scrollTo(0, height - 52);
   });
 }
 
