@@ -2,18 +2,19 @@
 
 function clickOut() {
   $(document).on('click', e => {
-    const node = $(e.target);
-
-    const menuQuery = node.closest('ul')[0];
     const menu = $('.nav-links-container ul');
+    const isCollapse = menu.hasClass('collapse');
 
-    const buttonQuery = node.closest('button')[0];
-    const btn = $('#hamburger').closest('button');
-    
-    const hideBtn = btn.hasClass('hidden');
+    if (!isCollapse) {
+      const node = $(e.target)
+      const nodeList = node.closest('#nav-menu')[0];
+      const nodeBtn = node.closest('#hamburger')[0];
 
-    if (menuQuery !== menu[0] && buttonQuery !== btn[0] && !hideBtn ) {
-      menu.addClass('hidden');
+      const hamburger = $('#hamburger')[0];
+
+      if (nodeList !== menu[0] && nodeBtn !== hamburger) {
+        menu.addClass('collapse');
+      }
     }
   });
 }
@@ -21,13 +22,13 @@ function clickOut() {
 function navLink() {
   $('.nav-links-container a').on('click', e => {
 
-    $('.nav-links-container ul').addClass('hidden');
+    $('.nav-links-container ul').addClass('collapse');
   });
 }
 
 function navButton() {
   $('#hamburger').on('click', () => {
-    $('.nav-links-container ul').toggleClass('hidden');
+    $('.nav-links-container ul').toggleClass('collapse');
   });
 }
 
