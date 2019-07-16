@@ -2,7 +2,7 @@
 
 function clickOut() {
   $(document).on('click', e => {
-    const menu = $('.nav-links-container ul');
+    const menu = $('#nav-menu');
     const isCollapse = menu.hasClass('collapse');
 
     if (!isCollapse) {
@@ -34,7 +34,7 @@ function navButton() {
 
 function genLink(href, name) {
   return `
-      <a href="${href}" target="_blank" rel="noopener noreferrer">${name}</a>
+    <a href="${href}" target="_blank" rel="noopener noreferrer">${name}</a>
   `
 }
 
@@ -106,4 +106,4 @@ function docReady() {
   navLink();
 }
 
-$(docReady());
+$(docReady);
