@@ -168,7 +168,19 @@ const data = [
             name: 'jQuery',
             icon: jquery
           }
-        ] 
+        ]
+      },
+      {
+        tech: 'Back-End',
+        items: [
+          {
+            name: 'Node.js',
+            icon: node
+          },{
+            name: 'Express',
+            icon: express
+          }
+        ]  
       }
     ]
   }
