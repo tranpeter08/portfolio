@@ -149,7 +149,7 @@ const data = [
     project: 'NiteOut',
     screenshot: './images/niteout.png',
     desc: 'I occasionally drive for ride-sharing services to supplement my income.  Sometimes my passengers would take me to cities I\'m unfamiliar with.  To help me find out where I can find additional rides, I created "NiteOut".  Not only for just rideshare drivers, but for anyone looking to find out what\'s popular at their location',
-    demo: 'https://tranpeter08.github.io/NiteOut',
+    demo: 'https://nite-out-01.herokuapp.com/',
     code: 'https://github.com/tranpeter08/NiteOut',
     techStack: [
       {
