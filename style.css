@@ -91,12 +91,11 @@ nav a:visited{
 }
 
 .nav-links-container a:hover{
-  background-color:rgb(230, 230, 230);
+  background-color:rgb(15, 110, 180);
 }
 
 section{
   padding: 2rem 2rem 14rem;
-  /* margin-top: 10rem; */
 }
 
 section h1{
