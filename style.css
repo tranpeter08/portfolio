@@ -144,7 +144,7 @@ section:nth-child(even){
 }
 
 #landing p{
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 1rem 1rem 0;
 }
 
@@ -184,6 +184,11 @@ footer h3,
   align-items: center;
 }
 
+#about p{
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
 .about-text-container{
   max-width: 80rem;
 }
@@ -207,6 +212,7 @@ footer h3,
   flex-flow: row wrap;
   border-radius: 1rem;
   max-width: 80rem;
+  box-shadow: 0 0 10px 1px rgba(0,0,0, 0.4);
 }
 
 .img-container{
@@ -260,6 +266,7 @@ footer h3,
   margin: 1rem 2rem;
   font-size: 2rem;
   background: black;
+  border-radius: 8px;
 }
 
 .links-container a,
