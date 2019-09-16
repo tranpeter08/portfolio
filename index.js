@@ -73,10 +73,12 @@ function mapProjects({project, screenshot, desc, demo, code, techStack}) {
   return `
     <div class='project-container'>
       <div class='img-container'>
-        <img 
-          class='screenshot' 
-          src='${screenshot}' 
-          alt='Screenshot of "${project}"' />
+        <a href='${demo}' target='_blank' >
+          <img 
+            class='screenshot' 
+            src='${screenshot}' 
+            alt='Screenshot of "${project}"' />
+        </a>
       </div>  
       <div class='descr-container'>
           <h2>${project}</h2>
