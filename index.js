@@ -41,7 +41,13 @@ function genLink(href, name) {
 function mapItem({name, icon}) {
   return `
     <li>
-      <img class='tech-icon' title='${name}' aria-label=${name} src='${icon}' alt='Icon for ${name}'/>
+      <img 
+        class='tech-icon' 
+        title='${name}' 
+        aria-label=${name} 
+        src='${icon}' 
+        alt='Icon for ${name}'
+        tabindex=0/>
     </li>
   `;
 }
