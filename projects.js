@@ -215,4 +215,34 @@ const data = [
       },
     ],
   },
+  {
+    project: 'Quentin Tarantino Quiz',
+    screenshot: './images/taratinoquiz.png',
+    desc: `A fun quiz app to test one's knowledge of Taratino Movies.`,
+    demo: 'https://tranpeter08.github.io/QuentinTarantinoQuizApp/',
+    code: 'https://github.com/tranpeter08/QuentinTarantinoQuizApp',
+    techStack: [
+      {
+        tech: 'Front-End',
+        items: [
+          {
+            name: 'HTML',
+            icon: html,
+          },
+          {
+            name: 'CSS',
+            icon: css,
+          },
+          {
+            name: 'Javascript',
+            icon: js,
+          },
+          {
+            name: 'jQuery',
+            icon: jquery,
+          },
+        ],
+      },
+    ],
+  },
 ];
