@@ -18,8 +18,9 @@ const data = [
   {
     project: 'Get Swole',
     screenshot: './images/getswole.png',
-    desc: '\tI wanted to get back into weight lifting and found that it was tricky to remember the stats I had for each exercise, so I created Get Swole. Get Swole keeps track of workouts, search for nutrition values, and recipes.',
-    demo: 'https://get-swole-app.herokuapp.com/',
+    desc:
+      '\tI wanted to get back into weight lifting and found that it was tricky to remember the stats I had for each exercise, so I created Get Swole. Get Swole keeps track of workouts, search for nutrition values, and recipes.',
+    demo: 'https://get-swole-app.netlify.app/',
     code: 'https://github.com/tranpeter08/GetSwole',
     techStack: [
       {
@@ -27,66 +28,80 @@ const data = [
         items: [
           {
             name: 'HTML',
-            icon: html
-          },{
+            icon: html,
+          },
+          {
             name: 'CSS',
-            icon: css
-          },{
-          name: 'React JS',
-          icon: react
-          },{
+            icon: css,
+          },
+          {
+            name: 'React JS',
+            icon: react,
+          },
+          {
             name: 'Redux',
-            icon: redux
-          }
-        ] 
-      },{
+            icon: redux,
+          },
+        ],
+      },
+      {
         tech: 'Back-End',
         items: [
           {
             name: 'Node JS',
-            icon: node
-          },{
+            icon: node,
+          },
+          {
             name: 'Express',
-            icon: express
-          },{
+            icon: express,
+          },
+          {
             name: 'MongoDB',
-            icon: mongodb
-          }
-        ] 
-      },{
+            icon: mongodb,
+          },
+        ],
+      },
+      {
         tech: 'Authentication',
         items: [
           {
             name: 'JWT',
-            icon: jwt
-          },{
+            icon: jwt,
+          },
+          {
             name: 'Passport',
-            icon: passport
-          }
-        ] 
-      },{
+            icon: passport,
+          },
+        ],
+      },
+      {
         tech: 'Testing',
         items: [
           {
             name: 'Jest',
-            icon: jest
-          },{
+            icon: jest,
+          },
+          {
             name: 'Enzyme',
-            icon: enzyme
-          },{
-          name: 'Mocha',
-          icon: mocha
-          },{
+            icon: enzyme,
+          },
+          {
+            name: 'Mocha',
+            icon: mocha,
+          },
+          {
             name: 'Chai',
-            icon: chai
-          }
-        ] 
-      }
-    ]
-  },{
+            icon: chai,
+          },
+        ],
+      },
+    ],
+  },
+  {
     project: 'Argus',
     screenshot: './images/argus.png',
-    desc: 'This project was motivated by a former employer in the inspection industry who had a fast growing company.  As the company grew, it was harder to keep track of employers and their certifications, the equipment they had checked out, and their contact info.  Argus was created to solve this problem.',
+    desc:
+      'This project was motivated by a former employer in the inspection industry who had a fast growing company.  As the company grew, it was harder to keep track of employers and their certifications, the equipment they had checked out, and their contact info.  Argus was created to solve this problem.',
     demo: 'https://argus-01.herokuapp.com/',
     code: 'https://github.com/tranpeter08/Argus',
     techStack: [
@@ -95,60 +110,72 @@ const data = [
         items: [
           {
             name: 'HTML',
-            icon: html
-          },{
+            icon: html,
+          },
+          {
             name: 'CSS',
-            icon: css
-          },{
+            icon: css,
+          },
+          {
             name: 'Javascript',
-            icon: js
-          },{
+            icon: js,
+          },
+          {
             name: 'jQuery',
-            icon: jquery
-          }
-        ]
-      },{
+            icon: jquery,
+          },
+        ],
+      },
+      {
         tech: 'Back-End',
         items: [
           {
             name: 'Node JS',
-            icon: node
-          },{
+            icon: node,
+          },
+          {
             name: 'Express',
-            icon: express
-          },{
+            icon: express,
+          },
+          {
             name: 'MongoDB',
-            icon: mongodb
-          }
-        ] 
-      },{
+            icon: mongodb,
+          },
+        ],
+      },
+      {
         tech: 'Authentication',
         items: [
           {
             name: 'JWT',
-            icon: jwt
-          },{
+            icon: jwt,
+          },
+          {
             name: 'Passport',
-            icon: passport
-          }
-        ] 
-      },{
+            icon: passport,
+          },
+        ],
+      },
+      {
         tech: 'Testing',
         items: [
           {
             name: 'Mocha',
-            icon: mocha
-          },{
+            icon: mocha,
+          },
+          {
             name: 'Chai',
-            icon: chai
-          }
-        ] 
-      }
-    ]
-  },{
+            icon: chai,
+          },
+        ],
+      },
+    ],
+  },
+  {
     project: 'NiteOut',
     screenshot: './images/niteout.png',
-    desc: 'I occasionally drive for ride-sharing services to supplement my income.  Sometimes my passengers would take me to cities I\'m unfamiliar with.  To help me find out where I can find additional rides, I created "NiteOut".  Not only for just rideshare drivers, but for anyone looking to find out what\'s popular at their location',
+    desc:
+      'I occasionally drive for ride-sharing services to supplement my income.  Sometimes my passengers would take me to cities I\'m unfamiliar with.  To help me find out where I can find additional rides, I created "NiteOut".  Not only for just rideshare drivers, but for anyone looking to find out what\'s popular at their location',
     demo: 'https://nite-out-01.herokuapp.com/',
     code: 'https://github.com/tranpeter08/NiteOut',
     techStack: [
@@ -157,31 +184,35 @@ const data = [
         items: [
           {
             name: 'HTML',
-            icon: html
-          },{
+            icon: html,
+          },
+          {
             name: 'CSS',
-            icon: css
-          },{
-          name: 'Javascript',
-          icon: js
-          },{
+            icon: css,
+          },
+          {
+            name: 'Javascript',
+            icon: js,
+          },
+          {
             name: 'jQuery',
-            icon: jquery
-          }
-        ]
+            icon: jquery,
+          },
+        ],
       },
       {
         tech: 'Back-End',
         items: [
           {
             name: 'Node.js',
-            icon: node
-          },{
+            icon: node,
+          },
+          {
             name: 'Express',
-            icon: express
-          }
-        ]  
-      }
-    ]
-  }
-]
+            icon: express,
+          },
+        ],
+      },
+    ],
+  },
+];
