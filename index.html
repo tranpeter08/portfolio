@@ -1,99 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name='Description' content='My name is Peter, and I am full stack developer based in Los Angeles, CA. I enjoy coding and creating web apps. Checkout my work!' />
-  <link rel="icon" type="image/ico" href="./initials.ico"/>
-  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f810e98638.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Peter Tran - Full Stack Web Developer</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="Description"
+      content="My name is Peter, and I am full stack developer based in Los Angeles, CA. I enjoy coding and creating web apps. Checkout my work!"
+    />
+    <link rel="icon" type="image/ico" href="./initials.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/f810e98638.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Peter Tran - Full Stack Web Developer</title>
+  </head>
 
-<body>
-  <header>
-    <nav class="nav-main">
-      <span><a class="nav-home" href="#landing">Peter Tran</a></span>
-      <div class='nav-links-container'>
-        <button id='hamburger' aria-label="Menu"><i class="fas fa-bars"></i></button>
-        <ul id='nav-menu' class="collapse">
-          <li ><a href='#about' >About</a></li>
-          <li ><a href='#projects' >Projects</a></li>
-          <li ><a href='#landing' >Connect</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section id='landing'>
-      <div class="profile-icon-container">
-        <img src="./images/profile-icon.jpg" alt="Image of Peter" class='profile-icon'>
-      </div>
-      <h1>Hello!</h1>
-      <p class="landing-text">
-        My name is Peter, and I am a full stack developer based in 
-        Los Angeles, CA.
-      </p>
-      <div class="contact-ctnr">
-        <a class="contact-link" href="mailto:tran.peter08@gmail.com" target="_top" aria-label="Email" title='Email'>
+  <body>
+    <header>
+      <nav class="nav-main">
+        <span><a class="nav-home" href="#landing">Peter Tran</a></span>
+        <div class="nav-links-container">
+          <button id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="nav-menu" class="collapse">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#landing">Connect</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="landing">
+        <div class="profile-icon-container">
+          <img
+            src="./images/profile-icon.jpg"
+            alt="Image of Peter"
+            class="profile-icon"
+          />
+        </div>
+        <h1>Hello!</h1>
+        <p class="landing-text">
+          My name is Peter, and I am a full stack developer based in Los
+          Angeles, CA.
+        </p>
+        <div class="contact-ctnr">
+          <a
+            class="contact-link"
+            href="mailto:tran.peter08@gmail.com"
+            target="_top"
+            aria-label="Email"
+            title="Email"
+          >
             <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            class="contact-link"
+            href="https://github.com/tranpeter08"
+            target="_blank"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/petertran08/"
+            target="_blank"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1>About Me</h1>
+        <div class="about-text-container">
+          <p class="about-text">
+            <span class="tab"></span>
+            I enjoy coding and creating web apps. To see something that was just
+            an idea come to life on screen is very rewarding. Staring at the
+            terminal, and successfully debugging code has become one of my
+            favorite hobbies! I am motivated to learn all I can, take on
+            challenges, share my knowledge, and continue to grow. I'm glad to be
+            a part of the coding community, and look forward to working with
+            others who share my enthusiasm and passion for coding.
+          </p>
+          <p class="about-text">
+            <span class="tab"></span>
+            Outside of coding for fun, I am a car and motorcycle enthusiast, as
+            well as an avid weekend BBQ’er. During my free time, I could be
+            found wrenching in the garage or in the backyard tending to my
+            grill, and trying a new rub recipe.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="contact-ctnr-foot">
+        <h3 id="connect">Connect</h3>
+        <a
+          class="contact-link"
+          href="mailto:tran.peter08@gmail.com"
+          target="_top"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
         </a>
-        <a class="contact-link" href="https://github.com/tranpeter08" target="_blank" aria-label="GitHub" title='GitHub'>
+        <a
+          class="contact-link"
+          href="https://github.com/tranpeter08"
+          target="_blank"
+          aria-label="GitHub"
+        >
           <i class="fab fa-github"></i>
         </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/petertran08/" target="_blank" aria-label="LinkedIn" title='LinkedIn'>
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/petertran08/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-    </section>
+    </footer>
 
-    <section id='about' >
-      <h1>About Me</h1>
-      <div class="about-text-container">
-        <p class="about-text">
-          <span class="tab"></span>
-          I enjoy coding and creating web apps. To see something that was just an 
-          idea come to life on screen is very rewarding.  Staring at the terminal, 
-          and successfully debugging code has become one of my favorite hobbies!  
-          I am motivated to learn all I can, take on challenges, share my knowledge, 
-          and continue to grow. I'm glad to be a part of the coding community, and look 
-          forward to working with others who share my enthusiasm and passion for coding.
-        </p>
-        <p class="about-text">
-          <span class="tab"></span>
-          Outside of coding for fun, I am a car and motorcycle enthusiast, as 
-          well as an avid weekend BBQ’er.  During my free time, I could be 
-          found wrenching in the garage or in the backyard tending to my grill, 
-          and trying a new rub recipe.
-        </p>
-      </div>
-    </section>
-
-    <section id='projects'>
-      <h1>Projects</h1>
-      <div class="projects" ></div>
-    </section>
-  </main>
-  <footer>
-    <div class="contact-ctnr-foot">
-        <h3 id='connect'>Connect</h3>
-        <a class="contact-link" href="mailto:tran.peter08@gmail.com" target="_top" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a class="contact-link" href="https://github.com/tranpeter08" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/petertran08/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src='./projects.js'></script>
-  <script src='./index.js'></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./projects.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
