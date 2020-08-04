@@ -218,7 +218,7 @@ const data = [
   {
     project: 'Quentin Tarantino Quiz',
     screenshot: './images/taratinoquiz.png',
-    desc: `A fun quiz app to test one's knowledge of Taratino Movies.`,
+    desc: `A fun quiz app to test one's knowledge of Tarantino Movies.`,
     demo: 'https://tranpeter08.github.io/QuentinTarantinoQuizApp/',
     code: 'https://github.com/tranpeter08/QuentinTarantinoQuizApp',
     techStack: [
