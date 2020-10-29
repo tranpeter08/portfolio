@@ -1,12 +1,12 @@
 'use strict';
 
 function clickOut() {
-  $(document).on('click', e => {
+  $(document).on('click', (e) => {
     const menu = $('#nav-menu');
     const isCollapse = menu.hasClass('collapse');
 
     if (!isCollapse) {
-      const node = $(e.target)
+      const node = $(e.target);
       const nodeMenu = node.closest('#nav-menu')[0];
       const nodeBtn = node.closest('#hamburger')[0];
 
@@ -20,8 +20,7 @@ function clickOut() {
 }
 
 function navLink() {
-  $('.nav-links-container a').on('click', e => {
-
+  $('.nav-links-container a').on('click', (e) => {
     $('.nav-links-container ul').addClass('collapse');
   });
 }
@@ -35,10 +34,10 @@ function navButton() {
 function genLink(href, name) {
   return `
     <a href="${href}" target="_blank" rel="noopener noreferrer">${name}</a>
-  `
+  `;
 }
 
-function mapItem({name, icon}) {
+function mapItem({ name, icon }) {
   return `
     <li>
       <img 
@@ -56,7 +55,7 @@ function genItems(items) {
   return items.map(mapItem).join('');
 }
 
-function mapTech({tech, items}) {
+function mapTech({ tech, items }) {
   return `
     <div class='stack-container'>
       <h3>${tech}</h3>
@@ -69,11 +68,11 @@ function genTech(techStack) {
   return techStack.map(mapTech).join('');
 }
 
-function mapProjects({project, screenshot, desc, demo, code, techStack}) {
+function mapProjects({ project, screenshot, desc, demo, code, techStack }) {
   return `
     <div class='project-container'>
       <div class='img-container'>
-        <a href='${demo}' target='_blank' >
+        <a href='${demo}' target='_blank' rel='noopener noreferrer' >
           <img 
             class='screenshot' 
             src='${screenshot}' 
