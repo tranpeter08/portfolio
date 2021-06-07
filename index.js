@@ -106,11 +106,19 @@ function renderProjects() {
   `);
 }
 
+function setCopyrightYear() {
+  const date = new Date();
+  const year = date.getFullYear();
+
+  $('#copyright-year').html(year);
+}
+
 function docReady() {
   clickOut();
   renderProjects();
   navButton();
   navLink();
+  setCopyrightYear();
 }
 
 $(docReady);
